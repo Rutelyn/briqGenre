@@ -6,16 +6,22 @@ const K = {
             name: "Home",
             path: "/"
         },
+
+        {
+            name: "About Us",
+            path: "/about"
+        },
+        
         {
             name: "Products",
             path: "/products"
         },
-        {
-            name: "About Us",
-            path: "/aboutus"
-        },
         
-       
+        
+        {
+            name: "Testimonials",
+            path: "/testimonials"
+        },
     ],
 }
 

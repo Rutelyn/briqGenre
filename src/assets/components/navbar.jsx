@@ -1,4 +1,4 @@
-import jemma from "../images/jemmaLogo.png";
+import briq from "../images/briqLogo.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import K from "../constants";
@@ -11,17 +11,17 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-md">
-      <div className="flex justify-between items-center px-4 py-2 m-2">
-        <span className="w-10 h-10">
-          <img src={jemma} alt="logo" />
+    <nav className="bg-white shadow-md w-full overflow-hidden">
+      <div className="flex justify-between items-center px-4 py-3">
+        <span className="w-10 h-10 flex-shrink-0">
+          <img src={briq} alt="logo" />
         </span>
         <div className="hidden md:flex gap-x-5">
           {K.NAVLINKS.map((item, index) => (
             <Link
               key={index}
               to={item.path}
-              className="border border-[#10CC9F] px-3 py-2 rounded hover:bg-[#10CC9F]"
+              className="border border-[#10CC9F] px-3 py-2 rounded transition duration-200 hover:bg-[#10CC9F] hover:text-white"
             >
               {item.name}
             </Link>
@@ -50,12 +50,12 @@ const Navbar = () => {
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden flex flex-col items-start px-4 py-2 bg-white">
+        <div className="md:hidden flex flex-col items-start px-5 py-3 bg-white max-w-sm mx-auto shadow-lg rounded-md">
           {K.NAVLINKS.map((item, index) => (
             <Link
               key={index}
               to={item.path}
-              className="border border-[#10CC9F] w-full text-left px-3 py-2 rounded hover:bg-[#10CC9F] mb-1"
+              className="border border-[#10CC9F] w-full text-left px-3 py-2 rounded transition duration-200 hover:bg-[#10CC9F] hover:text-white mb-1"
               onClick={toggleMenu}
             >
               {item.name}
