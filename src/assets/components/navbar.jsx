@@ -21,7 +21,7 @@ const Navbar = () => {
             <Link
               key={index}
               to={item.path}
-              className="border border-[#10CC9F] px-3 py-2 rounded transition duration-200 hover:bg-[#10CC9F] hover:text-white"
+              className="border border-[#834d21] px-3 py-2 rounded transition duration-200 hover:bg-[#834d21] hover:text-white"
             >
               {item.name}
             </Link>
@@ -30,7 +30,7 @@ const Navbar = () => {
         <div className="md:hidden">
           <button
             onClick={toggleMenu}
-            className="text-[#10CC9F] focus:outline-none"
+            className="text-[#834d21] focus:outline-none"
           >
             <svg
               className="w-6 h-6"
@@ -55,7 +55,7 @@ const Navbar = () => {
             <Link
               key={index}
               to={item.path}
-              className="border border-[#10CC9F] w-full text-left px-3 py-2 rounded transition duration-200 hover:bg-[#10CC9F] hover:text-white mb-1"
+              className="border border-[#834d21] w-full text-left px-3 py-2 rounded transition duration-200 hover:bg-[#834d21] hover:text-white mb-1"
               onClick={toggleMenu}
             >
               {item.name}
