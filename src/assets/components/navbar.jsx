@@ -1,4 +1,4 @@
-import briq from "../images/briqLogo.png";
+import agri from "../images/agriLogo.jpeg";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import K from "../constants";
@@ -13,8 +13,8 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow-md w-full overflow-hidden">
       <div className="flex justify-between items-center px-4 py-3">
-        <span className="w-10 h-10 flex-shrink-0">
-          <img src={briq} alt="logo" />
+        <span className="w-16 h-4 flex-shrink-0">
+          <img src={agri} alt="logo" />
         </span>
         <div className="hidden md:flex gap-x-5">
           {K.NAVLINKS.map((item, index) => (

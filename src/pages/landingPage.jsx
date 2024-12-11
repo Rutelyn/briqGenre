@@ -1,6 +1,6 @@
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import briq from "../assets/images/briqHero.png";
+import agri from "../assets/images/agriHero.png";
 import { Link } from "react-router-dom";
 import Testimonials from "../assets/components/testimonials";
 import Products from "../assets/components/products";
@@ -15,7 +15,7 @@ const LandingPage = () => {
 <div id="home" className="flex flex-col overflow-x-hidden h-screen">
   <div className="w-screen relative flex-grow">
     <img 
-      src={briq}  
+      src={agri}  
       className="w-full h-screen object-cover" 
       alt="Background" 
     />

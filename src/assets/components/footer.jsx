@@ -1,6 +1,6 @@
 import { ArrowBigUp, Facebook, Instagram, MailIcon, Twitter } from "lucide-react";
 import { Link } from "react-router-dom";
-import briq from "../images/briqLogo.png";
+import agri from "../images/agriLogo.jpeg";
 
 const Footer = () => {
   return (
@@ -24,7 +24,7 @@ const Footer = () => {
 
           
           <div className="w-full md:w-1/3 text-center mb-4 md:mb-0">
-            <img src={briq} alt="logo" className="h-12 w-auto mx-auto mb-2" />
+            <img src={agri} alt="logo" className="h-12 w-auto mx-auto mb-2" />
             <p className="text-sm md:text-base font-semibold">© 2024 BriqGenre, Inc.</p>
             <div className="flex justify-center gap-4 mt-2">
               <Link to="/facebook" className="hover:text-orange-200">
